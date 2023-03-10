@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="mavenproject">
+  <ClassDiagramComponents>
+    <Class name="Bread" package="com.mycompany.mavenproject" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="breadType" type="String" visibility="private"/>
+        <Field name="caloriesPerSlice" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="breadType"/>
+          <Argument type="int" name="caloriesPerSlice"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBreadType" returnType="String" visibility="package"/>
+        <Method name="setBreadType" returnType="void" visibility="package">
+          <Argument type="String" name="breadType"/>
+        </Method>
+        <Method name="getCaloriesPerSlice" returnType="int" visibility="package"/>
+        <Method name="setCaloriesPerSlice" returnType="void" visibility="package">
+          <Argument type="int" name="caloriesPerSlice"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Filling" package="com.mycompany.mavenproject" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="fillingType" type="String" visibility="private"/>
+        <Field name="caloriesPerServing" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="fillingType"/>
+          <Argument type="int" name="caloriesPerServing"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFillingType" returnType="String" visibility="package"/>
+        <Method name="setFillingType" returnType="void" visibility="package">
+          <Argument type="String" name="fillingType"/>
+        </Method>
+        <Method name="getCaloriesPerServing" returnType="int" visibility="package"/>
+        <Method name="setCaloriesPerServing" returnType="void" visibility="package">
+          <Argument type="int" name="caloriesPerServing"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Sandwich" package="com.mycompany.mavenproject" visibility="public" xPosition="20.0" yPosition="338.0">
+      <Fields>
+        <Field name="bread" type="Bread" visibility="private"/>
+        <Field name="filling" type="Filling" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="breadType"/>
+          <Argument type="int" name="caloriesPerSlice"/>
+          <Argument type="String" name="fillingType"/>
+          <Argument type="int" name="caloriesPerServing"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFilling" returnType="Filling" visibility="public"/>
+        <Method name="setFilling" returnType="void" visibility="package">
+          <Argument type="Filling" name="filling"/>
+        </Method>
+        <Method name="getBread" returnType="Bread" visibility="public"/>
+        <Method name="setBread" returnType="void" visibility="package">
+          <Argument type="Bread" name="bread"/>
+        </Method>
+        <Method name="getTotalCalories" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TipTopBakery" package="com.mycompany.mavenproject" visibility="public" xPosition="579.0" yPosition="298.0">
+      <Fields>
+        <Field name="s_w" type="Sandwich" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.mycompany.mavenproject.Sandwich" target="com.mycompany.mavenproject.Bread" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="com.mycompany.mavenproject.Sandwich" target="com.mycompany.mavenproject.TipTopBakery" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="bread" source="com.mycompany.mavenproject.Sandwich" target="com.mycompany.mavenproject.Bread" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.mavenproject.Sandwich" target="com.mycompany.mavenproject.Filling" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="filling" source="com.mycompany.mavenproject.Sandwich" target="com.mycompany.mavenproject.Filling" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
