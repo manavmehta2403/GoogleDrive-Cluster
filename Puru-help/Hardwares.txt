@@ -1,0 +1,45 @@
+Hardware: 
+
+Chipset / Chip / Processor:-
+ALU: Arithmetic Logical Unit it used to perform all the algorthim in the computer. 
+CU: Control Unit it is used to control the flow data.
+Register: It used to store the address of the data.
+
+BUS: It is the embedde wires which used to transfer data in chipset.
+
+*Low-level language are the language used by the chip to execute information from the data. It is in menosomic code in form of bits (0 and 1). Ex: ARM processor*
+
+*High-level language these languages use English words to execute information from the data. Ex Python*
+
+*We have seen Python has IDLE which act as the medium that convert high-level language to low level language. So, that chip can understand the code.*
+
+*Interpertor Compier is used to convert high-level language into low-level language.*
+
+
+*Python uses interpreter. Interpeter is a software that execute each line of the code one by one.
+Interpeter is used for checking errors. But it run slow.*
+
+*Compiler is the software that execute whole code in one go. Compiler is hard for checking the errors but it run fast.*
+
+
+
+
+Primary memory and Secondary memory.
+
+RAM is volatile memory, which loses the data as soon as the execution stop. (power-cut) 3600MHz. Speed of the computer
+
+Python variables and data is stored in RAM.
+
+Secondary memory is remain even after execution is stop. 520Mbps. Storage of the computer. Python files are stored in the secondary memory.
+
+
+
+
+Bits 
+Expanded form
+
+34 = 3 x 10 + 4 
+
+Bits: - O when power is off and 1 when power is on
+
+

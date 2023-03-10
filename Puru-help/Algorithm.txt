@@ -1,0 +1,22 @@
+Algorithm also known algo.
+It is something which act as recipe for programs
+
+let assume puru has to make tea
+
+1) Start gas stove
+2) Boil the water
+3) Will add sugar
+4) Will add tea
+5) Will add milk
+6) Let the mixture boil
+7) Serve the tea
+
+let assume manav has to make tea
+
+1) Call daddi
+2) Request daddi to make tea
+3) Take some bad words from daddi
+4) Cry for tea
+5) Daddi give bad tea
+
+
