@@ -1,0 +1,40 @@
+h1 {
+    color: brown;
+}
+
+div
+{
+    text-align: center;
+    margin: 30px 30px;
+    background-color: blue;
+    font: italic small-caps bold 12px/30px Georgia, serif; 
+    /* font-style
+    font-variant
+    font-weight
+    font-size/line-height
+    font-family */
+}
+header{
+    padding: 10px 10px;
+    background-color: green;
+    border: 5px solid red;
+    /* border-width
+    border-style (required)
+    border-color */
+}
+
+table{
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 2px solid red;
+    padding: 5px;
+}
+
+thead{
+    background-color: light grey;
+    text-align: center;
+}
+

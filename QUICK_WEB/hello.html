@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+
+    <style>
+        h1 {
+            color: purple
+        }
+    </style>
+
+    <link rel="stylesheet" href="hello.css">
+</head>
+
+<body>
+    <div>
+        <header>Hello, World!!</header>
+    </div>
+    <h1 style="color: blue ; text-align: center;">Headings have six tags h1 to h6</h1>
+    <p> it used to add paragraph and pre tag is quit interseting add the para in the same formt</p>
+
+    <uL>
+
+        <h1>Unoreded list samse for oredered list ol</h1>
+        <li>1.</li>
+        <li>2.</li>
+    </uL>
+
+    <img src="https://th.bing.com/th/id/R.88399706b4a51f89e8ab6d7a81b726a1?rik=bx8qwQQ%2fO4mlLw&pid=ImgRaw&r=0"
+        alt="Flower image" height="100" width="100" />
+
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manav</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Mehta</td>
+                <td>06</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total 2</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form class="form" action="new_page.html" method="get">
+        <h1> Login </h1>
+        <h3> Please input username and password </h3>
+        <label for="user">Enter mail: </label>
+        <!--for must be alin with name-->
+        <input id="username" type="email" name="user" value="" placeholder="username" required />
+        <input type="password" name="pass" value="" placeholder="PASSWORD" required />
+        <input type="submit" value="Click Me" />
+        <input type="color" value="red" />
+        <input type="text" name="txt" value="text" />
+        <textarea name="txtarea" value="textarea"></textarea>
+
+        <br />
+        <hr />
+        <label for="citizenType"> Are you NRI?: </label>
+        <input id="NRI" type="radio" name="citizenType" value="Yes">
+        <input id="NRI" type="radio" name="citizenType" value="No">
+
+        <label for="Rate">Rating</label>
+        <select id="Rate" name="stars">
+            <option value="1">Good</option>
+            <option value="2">Average</option>
+            <option value="3">Bad</option>
+        </select>
+
+    </form>
+</body>
+
+</html>
